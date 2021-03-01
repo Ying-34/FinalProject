@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Create New Account Page</title>
+    <link rel="stylesheet" href="./CSS/CreateNewAccount.css">
+    <script type="text/javascript" src="./CreateNewAccount/CreateNewAccount.js"></script>
+</head>
+<body>
+    <div class="Logo" onclick="location.href='index.jsp';">
+        <h1>Array Of Light Blog Page</h1>
+        <p>Be Happy! Be Safe!</p>
+    </div>
+<div class="container">
+    <div id="navBar">
+        <h1 class="h1">Create New Account</h1>
+        <div>
+            <span><a href="./Login/Login.jsp" title="Click and Login">Login Page</a></span>
+            <span><a href="./blog.jsp"
+                     title="Jump to Home Page">Home page</a></span>
+        </div>
+    </div>
+    <div id="main" style="margin: 5% 0;">
+        <form action="./createUser" method="post">
+            <h1>Create your account</h1>
+            <div id="menuItems">
+                First name:<br>
+                <input type="text" name="firstname">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname">
+                <br>
+                UserName:<br>
+                <input type="text" name="username" id="username">
+                <br>
+                Date of birth:<br>
+                <input type="date" name="dateofbirth">
+                <br><br>
+                Choose one Avatar Image:<br>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio1" value="BlackHairMAn.PNG"><label for="avatar-radio1"><img class="avatarImage" src="./images/BlackHairMAn.PNG" alt="avatar1" title="BlackHairMAn"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio2" value="RedHead.PNG"><label for="avatar-radio2"><img class="avatarImage" src="./images/RedHead.PNG" alt="avatar2" title="RedHead"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio3" value="Default.png"><label for="avatar-radio3"><img class="avatarImage" src="./images/Default.png" alt="avatar3" title="Default"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio4" value="Java.png"><label for="avatar-radio4"><img class="avatarImage" src="./images/Java.png" alt="avatar4" title="Java"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio5" value="Lion.png"><label for="avatar-radio5"><img class="avatarImage" src="./images/Lion.png" alt="avatar5" title="Lion"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio6" value="Monkey.PNG"><label for="avatar-radio6"><img class="avatarImage" src="./images/Monkey.PNG" alt="avatar6" title="Monkey"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio7" value="Sloth.png"><label for="avatar-radio7"><img class="avatarImage" src="./images/Sloth.png" alt="avatar7" title="Sloth"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio8" value="Seal.png"><label for="avatar-radio8"><img class="avatarImage" src="./images/Seal.png" alt="avatar8" title="Seal"></label>
+                <input type="radio" name="avatar" class="radioBtn" id="avatar-radio9" value="Dragonite.png"><label for="avatar-radio9"><img class="avatarImage" src="./images/Dragonite.png" alt="avatar9" title="Dragonite"></label>
+                <br>
+                Password:<br>
+                <input type="password" name="password" id="password">
+                <br>
+                Confirm Password:<br>
+                <input type="password" name="confirmed_password" id="confirmed_password"><span id="match">Passwords need to match</span><br>
+                <br>
+                Self introduction:<br>
+                <textarea rows="2" cols="45" name="selfintroduction"></textarea>
+                <br><br>
+            </div>
+            <input type="submit" value="Submit" id="submitButton">
+            <input type="reset">
+        </form>
+    </div>
+</div>
+<div class="footer">
+    <p>While there's Code, there's Bug!</p>
+</div>
+</body>
+</html>

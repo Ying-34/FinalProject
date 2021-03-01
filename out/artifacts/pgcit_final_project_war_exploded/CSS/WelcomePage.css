@@ -1,0 +1,251 @@
+html {
+    font-family: Calibri, sans-serif;
+    font-size: larger;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.h1 {
+    margin: 0;
+}
+
+.logo_sentence {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-image: url("../images/programming.png");
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav" ". main .";
+    grid-gap: 20px;
+
+    position: relative;
+}
+
+.logo {
+    padding-top: 41px;
+    background-image: url("../images/Array of Light Logo.jpg");
+    text-align: center;
+    height: 127px;
+}
+
+#navBar {
+    height: 96.44px;
+    grid-area: nav;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    display: inline-block;
+    font-size: 1.3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.a1 {
+    margin-top: 66px;
+}
+
+.a2 {
+    color: skyblue;
+    display: inline-block;
+    font-size: 2em;
+    margin-top: 113px;
+}
+
+.a3 {
+    margin-top: 106px;
+}
+
+.left {
+    position: relative;
+}
+
+.button1 {
+    text-align: center;
+    vertical-align: middle;
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .19), inset 0 1px 0 rgba(255, 255, 255, .4);
+
+    animation-delay: 1s;
+    animation: rightMove1, bottomMove1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.button1:hover {
+    background-color: white;
+}
+
+.button1 a {
+    color: white;
+}
+
+.button1:hover a {
+    color: skyblue;
+}
+
+/* .a1:hover{
+    color: skyblue;
+} */
+
+@keyframes rightMove1 {
+    50% {
+        animation-timing-function: linear;
+        left: 350px;
+    }
+}
+
+@keyframes bottomMove1 {
+    50% {
+        animation-timing-function: linear;
+        top: 300px;
+    }
+}
+
+.main {
+    position: relative;
+    height: 597px;
+    grid-area: main;
+    margin: 0;
+    align-content: center;
+}
+
+.button2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 20px solid skyblue;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .19), inset 0 1px 0 rgba(255, 255, 255, .4);
+
+    animation-delay: 1s;
+    animation-name: rightMove2, bottomMove2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.button2:hover {
+    background-color: skyblue;
+    border: 20px solid white;
+}
+
+.button2:hover a {
+    color: white;
+}
+
+@keyframes rightMove2 {
+    50% {
+        animation-timing-function: linear;
+        left: 200px;
+    }
+}
+
+@keyframes bottomMove2 {
+    50% {
+        animation-timing-function: linear;
+        bottom: 200px;
+    }
+}
+
+.right {
+    position: relative;
+}
+
+.button3 {
+    position: absolute;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    background-color: skyblue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .19), inset 0 1px 0 rgba(255, 255, 255, .4);
+
+    animation-delay: 2.5s;
+    animation-name: rightMove3, bottomMove3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    top: 0;
+    left: 0;
+}
+
+.button3:hover {
+    background-color: white;
+}
+
+.button3 a {
+    color: white;
+}
+
+.button3:hover a {
+    color: skyblue;
+}
+
+
+@keyframes rightMove3 {
+    50% {
+        animation-timing-function: linear;
+        left: 150px;
+    }
+}
+
+@keyframes bottomMove3 {
+    50% {
+        animation-timing-function: linear;
+        top: 300px;
+    }
+}
+
+.footer {
+    padding: 0.5rem 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+}
